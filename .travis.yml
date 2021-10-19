@@ -5,7 +5,7 @@ before_script:
   - python manage.py migrate
 script:
   - black .
-   - flake8 .
+  - flake8 .
   - coverage run --source='.' manage.py test
 after_success:
   - coveralls
